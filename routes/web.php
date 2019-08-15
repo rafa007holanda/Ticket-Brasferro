@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/', 'PagesController@index');
+Route::get('/', 'ConsultaController@index');
+Route::get('/telalogin', 'PagesController@telaLogin');
+Route::get('/telaadm', 'PagesController@telaAdm'); 
+Route::get('/teste', 'PagesController@Teste'); 
+Route::post('/telaPrintTicket', 'ConsultaController@index');
