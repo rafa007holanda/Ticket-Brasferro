@@ -13,7 +13,7 @@
                 <center>
                     <h1 class="fonte">Faça a leitura do código do crachá.</h1>
                     @csrf
-                    <form name="cod_ticket" action="" method="" >
+                    <form name="cod_ticket" action="/ConsultaController" method="POST" >
 
                         {{--  @csrf  --}}
 
