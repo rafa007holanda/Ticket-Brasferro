@@ -18,7 +18,6 @@ class CreateFuncionariosTable extends Migration
             $table->bigInteger('pis',12);
             $table->string('nome');
             $table->string('cod_cracha',4);
-            $table->timestamps();
         });
     }
 

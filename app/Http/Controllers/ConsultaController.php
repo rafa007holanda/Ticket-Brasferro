@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\funcionario;
 
 class ConsultaController extends Controller
 {
@@ -14,7 +15,8 @@ class ConsultaController extends Controller
     public function index()
     {
         // return view('layouts.Telas.telaPrintTicket');
-        $consulta  = $cod_cracha;
+        $consulta = funcionario::all();
+        return view('/', compact('consulta'));
 
     }
 
