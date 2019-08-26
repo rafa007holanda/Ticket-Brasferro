@@ -15,7 +15,7 @@ class CreateFuncionariosTable extends Migration
     {
         Schema::create('funcionarios', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('pis',12);
+            $table->string('pis',12);
             $table->string('nome');
             $table->string('cod_cracha',4);
         });

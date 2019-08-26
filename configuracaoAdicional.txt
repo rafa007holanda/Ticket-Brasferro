@@ -1,0 +1,3 @@
+A configuração para conexão ao banco PostgreSQL de ser feita além da configuração do .env e do database,
+deve ser modificado no arquivo php.ini as linhas contendo os seguintes conteúdo "pdo_pgsql.so" e "pgsql.so",
+devendo ser descomentado essas duas linhas.

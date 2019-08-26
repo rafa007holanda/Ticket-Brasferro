@@ -14,7 +14,7 @@ class ConsultaController extends Controller
      */
     public function index()
     {
-        // return view('layouts.Telas.telaPrintTicket');
+        return view('layouts.Telas.telaPrintTicket');
         $consulta = funcionario::all();
         return view('/', compact('consulta'));
 
